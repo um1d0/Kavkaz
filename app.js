@@ -560,6 +560,8 @@ const navLinks = document.querySelectorAll(".nav-links a");
 const categoryCards = document.querySelectorAll(".cat-card");
 const pageSections = document.querySelectorAll(".page-section");
 const menuGrid = document.getElementById("menu-grid");
+const menuToggle = document.querySelector(".menu-toggle");
+const topNav = document.querySelector(".top-nav");
 
 function changeLanguage(lang) {
   currentLang = lang;
@@ -591,6 +593,26 @@ function showPage(pageId) {
   navLinks.forEach((link) => {
     link.classList.toggle("active-link", link.dataset.page === pageId);
   });
+
+  closeMobileMenu();
+}
+
+function toggleMobileMenu() {
+  topNav.classList.toggle("open");
+  const isOpen = topNav.classList.contains("open");
+  menuToggle.setAttribute("aria-expanded", isOpen.toString());
+
+  const icon = menuToggle.querySelector("i");
+  if (icon) {
+    icon.className = isOpen ? "fas fa-times" : "fas fa-bars";
+  }
+}
+
+function closeMobileMenu() {
+  if (topNav.classList.contains("open")) {
+    topNav.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+  }
 }
 
 function setActiveCategory(category, element) {
@@ -606,13 +628,13 @@ function renderMenu() {
   const items = menuItems[currentCategory] || [];
   menuGrid.innerHTML = items
     .map((key) => {
-      const item = translations[currentLang][key];
+      const translatedItem = translations[currentLang][key] || translations.en[key] || {};
+      const imageSrc = translatedItem.img || (translations.en[key] && translations.en[key].img) || "";
       return `
             <div class="product">
-                <img src='${item.img || ""}' alt="${item.name}">
-                <h3>${item.name}</h3>
-                <span>${item.price}</span>
-                
+                ${imageSrc ? `<img src='${imageSrc}' alt="${translatedItem.name || ""}">` : ""}
+                <h3>${translatedItem.name || ""}</h3>
+                <span>${translatedItem.price || ""}</span>
             </div>
         `;
     })
@@ -624,6 +646,10 @@ function initializePage() {
   changeLanguage(savedLang);
   showPage("home");
   setActiveCategory("appetizers", document.querySelector(".cat-card"));
+
+  if (menuToggle) {
+    menuToggle.addEventListener("click", toggleMobileMenu);
+  }
 }
 
 window.addEventListener("DOMContentLoaded", initializePage);
