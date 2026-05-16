@@ -17,154 +17,342 @@ const translations = {
     cat_8: "Alcoholic Drinks",
     item_salad_fresh: {
       name: "Salad with Fresh Cucumbers and Tomatoes",
-      price: "$8",
+      price: "7₾",
       img: "assets/appetizer/kitrPamidrSlt.png",
     },
     item_choban_salad: {
       name: "Choban Salad (Shepherd's Salad)",
-      price: "$10",
+      price: "8₾",
       img: "assets/appetizer/Coban.png",
     },
-    item_greens: { name: "Greens", price: "$6", img: "assets/appetizer/Mwvanil.png" },
-    item_pickles: { name: "Assorted Pickled Vegetables", price: "$7", img: "assets/appetizer/mjavisAsort.png" },
-    item_olives: { name: "Olives", price: "$5", img: "assets/appetizer/olives.png" },
-    item_cheese_factory: { name: "Cheese Factory", price: "$10", img: "assets/appetizer/karxnuli.png" },
-    item_cheese_imeruli: { name: "Cheese Imeruli", price: "$11", img: "assets/appetizer/imeruli.png" },
-    item_cheese_sulguni: { name: "Cheese Sulguni", price: "$10", img: "assets/appetizer/sulguni.png" },
-    
+    item_greens: {
+      name: "Greens",
+      price: "7₾",
+      img: "assets/appetizer/Mwvanil.png",
+    },
+    item_pickles: {
+      name: "Assorted Pickled Vegetables",
+      price: "7₾",
+      img: "assets/appetizer/mjavisAsort.png",
+    },
+    item_olives: {
+      name: "Olives",
+      price: "?₾",
+      img: "assets/appetizer/olives.png",
+    },
+    item_cheese_factory: {
+      name: "Cheese Factory",
+      price: "9₾",
+      img: "assets/appetizer/karxnuli.png",
+    },
+    item_cheese_imeruli: {
+      name: "Cheese Imeruli",
+      price: "8₾",
+      img: "assets/appetizer/imeruli.png",
+    },
+    item_cheese_sulguni: {
+      name: "Cheese Sulguni",
+      price: "9₾",
+      img: "assets/appetizer/sulguni.png",
+    },
+
     item_spinach_pkhali: {
       name: "Spinach Pkhali with Walnuts",
-      price: "$9",
+      price: "?₾",
       img: "assets/appetizer/fxali.png",
     },
-    item_badrijani: { name: "Eggplant with Walnuts", price: "$10", img: "assets/appetizer/badrijaniNigvz.png" },
-    item_caesar: { name: "Caesar Salad", price: "$12", img: "assets/appetizer/ceasar.png" },
-    item_chicken_salad: { name: "Chicken Salad", price: "$11", img: "assets/appetizer/toyoxSalad.png" },
-    item_khash: { name: "Khash", price: "$15", img: "assets/hot dishes/xash.png" },
-
-// assets/hot dishes/
-
-    item_kharcho: { name: "Soup Kharcho", price: "$10", img: "assets/hot dishes/xarcho.png" },
-    item_ostri: { name: "Ostri", price: "$14", img: "assets/hot dishes/ostri.png" },
-    item_buglama: { name: "Buglama", price: "$16", img: "assets/hot dishes/buglama.png" },
-    item_piti: { name: "Piti", price: "$13", img: "assets/hot dishes/piti.png" },
-    item_khashlama: { name: "Khashlama", price: "$18", img: "assets/hot dishes/xhashlama.png" },
-    item_tabaka: { name: "Fried Chicken (Tabaka)", price: "$20", img: "assets/hot dishes/cuce.png" },
-    item_ojakhuri_pork: {
-      name: "Homemade Fried Potatoes (Ojakhuri)",
-      price: "$12",
-      img: "assets/hot dishes/ojaxuri kartof.png",
+    item_badrijani: {
+      name: "Eggplant with Walnuts",
+      price: "?₾",
+      img: "assets/appetizer/badrijaniNigvz.png",
     },
-    item_ojakhuri_veal: { name: "Homemade Fried Veal", price: "$22", img: "assets/hot dishes/xbos ojaxur.png" },
-    item_ojakhuri_lamb: { name: "Homemade Fried Lamb", price: "$24", img: "assets/hot dishes/batknis ojaxur.png" },
+    item_caesar: {
+      name: "Caesar Salad",
+      price: "20₾",
+      img: "assets/appetizer/ceasar.png",
+    },
+    item_chicken_salad: {
+      name: "Chicken Salad",
+      price: "9₾",
+      img: "assets/appetizer/toyoxSalad.png",
+    },
+    item_khash: {
+      name: "Khash",
+      price: "13₾",
+      img: "assets/hot dishes/xash.png",
+    },
+
+    // assets/hot dishes/
+
+    item_kharcho: {
+      name: "Soup Kharcho",
+      price: "13₾",
+      img: "assets/hot dishes/xarcho.png",
+    },
+    item_ostri: {
+      name: "Ostri",
+      price: "17₾",
+      img: "assets/hot dishes/ostri.png",
+    },
+    item_buglama: {
+      name: "Buglama",
+      price: "16₾",
+      img: "assets/hot dishes/buglama.png",
+    },
+    item_piti: {
+      name: "Piti",
+      price: "16₾",
+      img: "assets/hot dishes/piti.png",
+    },
+    item_khashlama: {
+      name: "Khashlama",
+      price: "22₾",
+      img: "assets/hot dishes/xhashlama.png",
+    },
+    item_tabaka: {
+      name: "Fried Chicken (Tabaka)",
+      price: "?₾",
+      img: "assets/hot dishes/cuce.png",
+    },
+    item_ojakhuri_potato: {
+      name: "Homemade Fried Potatoes (Ojakhuri)",
+      price: "7₾",
+      img: "assets/hot dishes/KartofOjaxur.png",
+    },
+    item_ojakhuri_veal: {
+      name: "Homemade Fried Veal",
+      price: "22₾",
+      img: "assets/hot dishes/xbos ojaxur.png",
+    },
+    item_ojakhuri_lamb: {
+      name: "Homemade Fried Lamb",
+      price: "22₾",
+      img: "assets/hot dishes/batknis ojaxur.png",
+    },
     item_shkmeruli: {
       name: "Shkmeruli (Fried Chicken with Garlic Sauce)",
-      price: "$19",
+      price: "20₾",
       img: "assets/hot dishes/shkmerul.png",
     },
     item_mushrooms_ketsi: {
       name: "Fried Mushrooms on Ketsi",
-      price: "$11",
+      price: "8₾",
       img: "assets/hot dishes/soko kedze.png",
     },
     item_mushrooms_cheese: {
       name: "Fried Mushrooms with Cheese (Sulguni) on Ketsi",
-      price: "$13",
+      price: "9₾",
       img: "assets/hot dishes/soko kedze.png",
     },
-    item_trout: { name: "Fried Trout on Grill", price: "$25", img: "assets/hot dishes/kalmax.png" },
-    item_fries: { name: "French Fries", price: "$6", img: "assets/hot dishes/fries.png" },
-    item_mexican_potatoes: { name: "Mexican Potatoes", price: "$8", img: "assets/hot dishes/mexican potat.png" },
-    item_khinkali: { name: "Khinkali", price: "$1.8 each", img: "assets/flour dishes/xinkal.png" },
+    item_trout: {
+      name: "Fried Trout on Grill",
+      price: "16₾",
+      img: "assets/hot dishes/kalmax.png",
+    },
+    item_fries: {
+      name: "French Fries",
+      price: "6₾",
+      img: "assets/hot dishes/fries.png",
+    },
+    item_mexican_potatoes: {
+      name: "Mexican Potatoes",
+      price: "7₾",
+      img: "assets/hot dishes/mexican potat.png",
+    },
+    item_khinkali: {
+      name: "Khinkali",
+      price: "1.8₾ each",
+      img: "assets/flour dishes/xinkal.png",
+    },
     item_khinkali_az: {
       name: "Azerbaijanian Khingal with Gurut",
-      price: "$13",
+      price: "14₾",
       img: "assets/flour dishes/azer xinkal.png",
+    },
+    item_khingal_az: {
+      name: " Azerbaijani Khingal with qurut and meat",
+      price: "16₾",
+      img: "assets/flour dishes/khingal_az.png",
     },
     item_khachapuri_megruli: {
       name: "Megruli Khachapuri",
-      price: "$15",
+      price: "15₾",
       img: "assets/flour dishes/megruli khach.png",
     },
     item_khachapuri_samepo: {
       name: "Samepo Khachapuri",
-      price: "$16",
-      img: "assets/flour dishes/",
+      price: "21₾",
+      img: "assets/flour dishes/samepo khach.png",
     },
     item_khachapuri_adjaruli: {
       name: "Adjaruli Khachapuri",
-      price: "$18",
-      img: "assets/flour dishes/",
+      price: "15₾",
+      img: "assets/flour dishes/ajaruli.png",
     },
     item_khachapuri_imeruli: {
       name: "Imeruli Khachapuri",
-      price: "$14",
-      img: "assets/flour dishes/",
+      price: "13₾",
+      img: "assets/flour dishes/imeruli khach.png",
     },
-    item_lobiani: { name: "Lobiani", price: "$10", img: "assets/flour dishes/" },
-    item_tkemali: { name: "Tkemali", price: "€3", img: "" },
-    item_qurut: { name: "Qurut", price: "€8", img: "" },
-    item_satsebel: { name: "Satsebeli (Tomato Sauce)", price: "€2", img: "" },
+    item_lobiani: {
+      name: "Lobiani",
+      price: "?₾",
+      img: "assets/flour dishes/lobiani.png",
+    },
+
+    item_chakapuli: {
+      name: "Chakapuli",
+      price: "22₾",
+      img: "assets/hot dishes/chakapuli.png",
+    },
+    item_tkemali: { name: "Tkemali", price: "3₾", img: "" },
+    item_qurut: { name: "Qurut", price: "8₾", img: "" },
+    item_satsebel: { name: "Satsebeli (Tomato Sauce)", price: "3₾", img: "" },
     item_narsharab: {
       name: "Narsharab (Pomegranate Molasses)",
-      price: "€2",
+      price: "?₾",
       img: "",
     },
-    item_water: { name: "Water", price: "€1.5", img: "" },
-    item_lemonade: { name: "Lemonade", price: "€2.5", img: "" },
-    item_nabeghlavi: { name: "Nabeghlavi", price: "€2.5", img: "" },
-    item_coca_cola: { name: "Coca-Cola", price: "€2.5", img: "" },
-    item_compote: { name: "Compote", price: "€7", img: "" },
-    item_instant_coffee: { name: "Instant Coffee", price: "€3", img: "" },
-    item_turkish_coffee: { name: "Turkish Coffee", price: "€3", img: "" },
-    item_tea: { name: "Tea", price: "€3", img: "" },
-    item_stolichnaya_1l: { name: "Stolichnaya - 1L", price: "₾50", img: "" },
+    item_water: {
+      name: "Water",
+      price: "2₾",
+      img: "assets/cold drinks/water.png",
+    },
+    item_lemonade: {
+      name: "Lemonade",
+      price: "3₾",
+      img: "assets/cold drinks/lemonade.png",
+    },
+    item_nabeghlavi: {
+      name: "Nabeghlavi",
+      price: "3₾",
+      img: "assets/cold drinks/nabeglavi.png",
+    },
+    item_coca_cola: {
+      name: "Coca-Cola",
+      price: "3₾",
+      img: "assets/cold drinks/Cola.png",
+    },
+    item_compote: {
+      name: "Compote",
+      price: "8₾",
+      img: "assets/cold drinks/kampot.png",
+    },
+    item_instant_coffee: {
+      name: "Instant Coffee",
+      price: "4₾",
+      img: "assets/cold drinks/instantcoffee.png",
+    },
+    item_turkish_coffee: {
+      name: "Turkish Coffee",
+      price: "3₾",
+      img: "assets/cold drinks/turkishcoffee.png",
+    },
+    item_tea: { name: "Tea", price: "5₾", img: "assets/cold drinks/tea.png" },
+    item_stolichnaya_1l: {
+      name: "Stolichnaya - 1L",
+      price: "50",
+      img: "assets/alcoholic drinks/Stolichnaya.png",
+    },
     item_stolichnaya_0_7l: {
       name: "Stolichnaya - 0.7L",
-      price: "₾40",
-      img: "",
+      price: "40₾",
+      img: "assets/alcoholic drinks/Stolichnaya.png",
     },
     item_stolichnaya_0_5l: {
       name: "Stolichnaya - 0.5L",
-      price: "₾35",
-      img: "",
+      price: "35₾",
+      img: "assets/alcoholic drinks/Stolichnaya.png",
     },
-    item_nemiroff_1l: { name: "Nemiroff - 1L", price: "₾37", img: "" },
-    item_nemiroff_0_7l: { name: "Nemiroff - 0.7L", price: "₾30", img: "" },
-    item_nemiroff_0_5l: { name: "Nemiroff - 0.5L", price: "₾30", img: "" },
-    item_nemiroff_0_2l: { name: "Nemiroff - 0.2L", price: "₾12", img: "" },
-    item_beer_0_5l: { name: "Beer", price: "₾4", img: "" },
+    item_nemiroff_1l: {
+      name: "Nemiroff - 1L",
+      price: "37₾",
+      img: "assets/alcoholic drinks/Nemiroff.png",
+    },
+    item_nemiroff_0_7l: {
+      name: "Nemiroff - 0.7L",
+      price: "30₾",
+      img: "assets/alcoholic drinks/Nemiroff.png",
+    },
+    item_nemiroff_0_5l: {
+      name: "Nemiroff - 0.5L",
+      price: "30₾",
+      img: "assets/alcoholic drinks/Nemiroff.png",
+    },
+    item_nemiroff_0_2l: {
+      name: "Nemiroff - 0.2L",
+      price: "12₾",
+      img: "assets/alcoholic drinks/Nemiroff.png",
+    },
+    item_beer_0_5l: {
+      name: "Beer",
+      price: "4₾",
+      img: "assets/alcoholic drinks/beer.png",
+    },
     item_white_wine_kakheti: {
       name: "Filtered White Wine in Kakheti (semi-sweet, semi-dry)",
-      price: "₾4",
-      img: "",
+      price: "8₾",
+      img: "assets/alcoholic drinks/white wine.png",
     },
     item_mcadi: { name: "Mchadi", price: "€2", img: "" },
     item_chvishtari: { name: "Chvishtari", price: "€3", img: "" },
     item_coreh_bread: { name: "Bread", price: "€1", img: "" },
-    item_ouzu_kababi: { name: "Lamb kebab", price: "€15", img: "" },
-    item_quzu_qabirgesi: { name: "Lamb ribs", price: "€15", img: "" },
-    item_quyruq_kababi: { name: "Tail fat on skewer", price: "€12", img: "" },
-    item_lule_kababi: { name: "Lula kebab", price: "€11", img: "" },
-    item_dana_kababi: { name: "Veal kebab", price: "€15", img: "" },
-    item_ciyer_kababi: { name: "Liver kebab", price: "€10", img: "" },
-    item_toyuq_kababi: { name: "Chicken kebab", price: "€9", img: "" },
+    item_ouzu_kababi: {
+      name: "Lamb kebab",
+      price: "18₾",
+      img: "assets/kebabs/lambKabab.png",
+    },
+    item_quzu_qabirgesi: {
+      name: "Lamb ribs",
+      price: "18₾",
+      img: "assets/kebabs/",
+    },
+    item_quyruq_kababi: {
+      name: "Tail fat on skewer",
+      price: "12₾",
+      img: "assets/kebabs/",
+    },
+    item_lule_kababi: {
+      name: "Lula kebab",
+      price: "14₾",
+      img: "assets/kebabs/lule.png",
+    },
+    item_dana_kababi: {
+      name: "Veal kebab",
+      price: "22₾",
+      img: "assets/kebabs/",
+    },
+    item_ciyer_kababi: {
+      name: "Liver kebab",
+      price: "12₾",
+      img: "assets/kebabs/CigerKabab.png",
+    },
+    item_toyuq_kababi: {
+      name: "Chicken kebab",
+      price: "12₾",
+      img: "assets/kebabs/chickenKabab.png",
+    },
     item_khan_kababi: {
       name: "Khan kebab (heart and liver)",
-      price: "€12",
-      img: "",
+      price: "12₾",
+      img: "assets/kebabs/",
     },
     item_teravez_kababi: {
       name: "Vegetables on skewer (peppers, eggplant, tomatoes)",
-      price: "€9",
-      img: "",
+      price: "?₾",
+      img: "assets/kebabs/",
     },
-    item_dana_basdirmasi: { name: "Veal basturma", price: "€15", img: "" },
+    item_dana_basdirmasi: {
+      name: "Veal basturma",
+      price: "18₾",
+      img: "assets/kebabs/bastirma.png",
+    },
     contact_prefix: "Contact",
     contact_title: "Find Us",
-    contact_text:
-      "Visit our vibrant location in Tbilisi or order directly through your favorite delivery apps.",
-    address: "123 Rustaveli Ave, Tbilisi, Georgia",
+   
+    address: "Gorgasali 32, Tbilisi, Georgia",
+    book_table: "Book a Table",
+    see_menu: "See Menu",
   },
   ka: {
     nav_home: "მთავარი",
@@ -190,7 +378,7 @@ const translations = {
     item_cheese_factory: { name: "ქარხნული ყველი", price: "$10", img: "" },
     item_cheese_imeruli: { name: "იმერული ყველი ", price: "$11", img: "" },
     item_cheese_sulguni: { name: "სულგუნი", price: "$10", img: "" },
-  
+
     item_spinach_pkhali: {
       name: "ისპანახის ფხალი ნიგვზით",
       price: "$9",
@@ -206,7 +394,7 @@ const translations = {
     item_piti: { name: "ფითი", price: "$13", img: "" },
     item_khashlama: { name: "ხაშლამა", price: "$18", img: "" },
     item_tabaka: { name: "შემწვარი წიწილა (ტაბაკა)", price: "$20", img: "" },
-    item_ojakhuri_pork: { name: "კარტოფილის ოჯახური", price: "$12", img: "" },
+    item_ojakhuri_potato: { name: "კარტოფილის ოჯახური", price: "$12", img: "" },
     item_ojakhuri_veal: { name: "ხბოს ოჯახური", price: "$22", img: "" },
     item_ojakhuri_lamb: { name: "ბატკნის ოჯახური", price: "$24", img: "" },
     item_shkmeruli: { name: "შქმერული", price: "$19", img: "" },
@@ -246,6 +434,16 @@ const translations = {
       img: "",
     },
     item_lobiani: { name: "ლობიანი", price: "$10", img: "" },
+    item_khingal_az: {
+      name: "აზერბაიჯანული ხინკალი ხორცით",
+      price: "16₾",
+      img: "assets/flour dishes/khingal_az.png",
+    },
+    item_chakapuli: {
+      name: "ჩაქაპული",
+      price: "22₾",
+      img: "assets/hot dishes/chakapuli.png",
+    },
     item_tkemali: { name: "ტყემალი ", price: "€3", img: "" },
     item_qurut: { name: "გურუთი", price: "€8", img: "" },
     item_satsebel: { name: "საწებელა", price: "€2", img: "" },
@@ -265,7 +463,7 @@ const translations = {
       price: "€12",
       img: "",
     },
-    item_teravez_kababi: { name: "საქონლის ბასტურმა", price: "€9", img: "" },
+    item_teravez_kababi: { name: "ბოსტნეულის მწვადი", price: "€9", img: "" },
     item_dana_basdirmasi: { name: "საქონლის ბასტურმა", price: "€15", img: "" },
     item_water: { name: "წყალი", price: "€1.5", img: "" },
     item_lemonade: { name: "ლიმონათი", price: "€2.5", img: "" },
@@ -302,9 +500,10 @@ const translations = {
     },
     contact_prefix: "კონტაქტი",
     contact_title: "მოგვძებნეთ",
-    contact_text:
-      "ეწვიეთ ჩვენს ლამაზ ადგილას თბილისში ან შეუკვეთეთ პირდაპირ თქვენს საყვარელ მომსახურებებზე.",
-    address: "რუსთაველის გამზირი 123, თბილისი",
+   
+    address: "გორგასლის ქუჩა 32, თბილისი",
+    book_table: "მაგიდის დაჯავშნა",
+    see_menu: "დაათვალიერეთ მენიუ",
   },
   ru: {
     nav_home: "Главная",
@@ -333,7 +532,7 @@ const translations = {
     item_cheese_factory: { name: "Сыр ЗАВОДСКОЙ", price: "$10", img: "" },
     item_cheese_imeruli: { name: "Сыр Имеретинский", price: "$11", img: "" },
     item_cheese_sulguni: { name: "Сулгуни", price: "$10", img: "" },
-    
+
     item_spinach_pkhali: {
       name: "Пхали из шпината с орехами",
       price: "$9",
@@ -349,7 +548,7 @@ const translations = {
     item_piti: { name: "Пити", price: "$13", img: "" },
     item_khashlama: { name: "Хашлама", price: "$18", img: "" },
     item_tabaka: { name: "Цыпленок табака", price: "$20", img: "" },
-    item_ojakhuri_pork: {
+    item_ojakhuri_potato: {
       name: "Жареная картошка по-домашнему",
       price: "$12",
       img: "",
@@ -405,6 +604,16 @@ const translations = {
       img: "",
     },
     item_lobiani: { name: "Лобиани", price: "$10", img: "" },
+    item_khingal_az: {
+      name: "Азербайджанский хинкали с мясом и курутом",
+      price: "16₾",
+      img: "assets/flour dishes/khingal_az.png",
+    },
+    item_chakapuli: {
+      name: "Чакапули",
+      price: "22₾",
+      img: "assets/hot dishes/chakapuli.png",
+    },
     item_tkemali: { name: "Ткемали", price: "€3", img: "" },
     item_qurut: { name: "Курут", price: "€8", img: "" },
     item_satsebel: { name: "Сацебели (томатный соус)", price: "€2", img: "" },
@@ -465,9 +674,10 @@ const translations = {
     },
     contact_prefix: "Контакт",
     contact_title: "Как нас найти",
-    contact_text:
-      "Посетите наше стильное место в Тбилиси или закажите со своих любимых сервисов доставки.",
-    address: "пр. Руставели 123, Тбилиси, Грузия",
+   
+    address: "Горгасали, 32, Тбилиси, Грузия",
+    book_table: "Забронировать столик",
+    see_menu: "Посмотреть меню",
   },
 };
 
@@ -481,7 +691,7 @@ const menuItems = {
     "item_cheese_factory",
     "item_cheese_imeruli",
     "item_cheese_sulguni",
-    
+
     "item_spinach_pkhali",
     "item_badrijani",
     "item_caesar",
@@ -494,8 +704,9 @@ const menuItems = {
     "item_buglama",
     "item_piti",
     "item_khashlama",
+    "item_chakapuli",
     "item_tabaka",
-    "item_ojakhuri_pork",
+    "item_ojakhuri_potato",
     "item_ojakhuri_veal",
     "item_ojakhuri_lamb",
     "item_shkmeruli",
@@ -508,11 +719,13 @@ const menuItems = {
   desserts: [
     "item_khinkali",
     "item_khinkali_az",
+    "item_khingal_az",
     "item_khachapuri_megruli",
     "item_khachapuri_samepo",
     "item_khachapuri_adjaruli",
     "item_khachapuri_imeruli",
     "item_lobiani",
+
     "item_mcadi",
     "item_chvishtari",
     "item_coreh_bread",
@@ -612,6 +825,11 @@ function closeMobileMenu() {
   if (topNav.classList.contains("open")) {
     topNav.classList.remove("open");
     menuToggle.setAttribute("aria-expanded", "false");
+
+    const icon = menuToggle.querySelector("i");
+    if (icon) {
+      icon.className = "fas fa-bars";
+    }
   }
 }
 
@@ -628,13 +846,17 @@ function renderMenu() {
   const items = menuItems[currentCategory] || [];
   menuGrid.innerHTML = items
     .map((key) => {
-      const translatedItem = translations[currentLang][key] || translations.en[key] || {};
-      const imageSrc = translatedItem.img || (translations.en[key] && translations.en[key].img) || "";
+      const translatedItem =
+        translations[currentLang][key] || translations.en[key] || {};
+      const imageSrc =
+        translatedItem.img ||
+        (translations.en[key] && translations.en[key].img) ||
+        "";
       return `
             <div class="product">
                 ${imageSrc ? `<img src='${imageSrc}' alt="${translatedItem.name || ""}">` : ""}
                 <h3>${translatedItem.name || ""}</h3>
-                <span>${translatedItem.price || ""}</span>
+                <span>${translations.en[key].price || ""}</span>
             </div>
         `;
     })

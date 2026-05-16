@@ -38,8 +38,8 @@
                    
                     <h1 data-key="hero_title tapestry-regular">KAVKAZ</h1>
                    
-                        <a href="#" class="btn btn-primary" onclick="showPage('contact')">Book a Table</a>
-                        <a href="#menu" class="btn btn-secondary">See Menu</a>
+                        <a href="#" class="btn btn-primary" onclick="showPage('contact')" data-key="book_table">Book a Table</a>
+                        <a href="#menu" class="btn btn-secondary" data-key="see_menu">See Menu</a>
                     </div>
                 </div>
             </header>
@@ -68,29 +68,41 @@
                 <div class="contact-copy">
                     <p class="eyebrow" data-key="contact_prefix">Contact</p>
                     <h2 data-key="contact_title">Find Us</h2>
-                    <p class="contact-text" data-key="contact_text">Visit our vibrant location in Tbilisi or order directly through your favorite delivery apps.</p>
+                    
                     <div class="contact-info">
-                        <div><i class="fas fa-map-marker-alt"></i> <span data-key="address">123 Rustaveli Ave, Tbilisi, Georgia</span></div>
-                        <div><i class="fas fa-phone-alt"></i> +995 555 12 34 56</div>
+                        <div class="address-item">
+                            <span class="contact-icon" aria-hidden="true">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </span>
+                            <span data-key="address">123 Rustaveli Ave, Tbilisi, Georgia</span>
+                        </div>
+                        <div>
+                            <a class="phone-link" href="tel:+995595555712" aria-label="Call Kavkaz at +995 595 55 57 12">
+                                <span class="phone-icon" aria-hidden="true">
+                                    <i class="fas fa-phone-alt"></i>
+                                </span>
+                                <span>+995 595 55 57 12</span>
+                            </a>
+                        </div>
                     </div>
                     <div class="delivery-logos">
                         <a href="https://glovoapp.com" target="_blank" rel="noreferrer">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Glovo_logo.svg/1200px-Glovo_logo.svg.png" alt="Glovo">
+                            <img src="/assets/logos/glovo.png" alt="Glovo">
                         </a>
                         <a href="https://wolt.com" target="_blank" rel="noreferrer">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Wolt_logo.svg/1200px-Wolt_logo.svg.png" alt="Wolt">
+                            <img src="/assets/logos/wolt.png" alt="Wolt">
                         </a>
                     </div>
                 </div>
                 <div class="contact-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.847585012345!2d44.79!3d41.72!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDQzJzEyLjAiTiA0NMKwNDcnMjQuMCJF!5e0!3m2!1sen!2sge!4v1630000000000!5m2!1sen!2sge" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.103824356606!2d44.8303885!3d41.6751011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440d50b3cb94c9%3A0x7e639420348020f7!2sRestaurant%20Kavkaz!5e0!3m2!1sen!2sge!4v1778928347502!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p>© 2026 Kavkaz. Modern Caucasian dining inspired by the mountains.</p>
+        <p>© 2026 Kavkaz. All rights reserved.</p>
     </footer>
 
     <script src="app.js"></script>
