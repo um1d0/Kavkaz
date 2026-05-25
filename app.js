@@ -294,9 +294,9 @@ const translations = {
       price: "8₾",
       img: "assets/alcoholic drinks/white wine.png",
     },
-    item_mcadi: { name: "Mchadi", price: "€2", img: "" },
-    item_chvishtari: { name: "Chvishtari", price: "€3", img: "" },
-    item_coreh_bread: { name: "Bread", price: "€1", img: "" },
+    item_mcadi: { name: "Mchadi", price: "€2", img: "assets/flour dishes/mwadi.png" },
+    item_chvishtari: { name: "Chvishtari", price: "€3", img: "assets/flour dishes/mchvish.png" },
+    item_coreh_bread: { name: "Bread", price: "€1", img: "assets/flour dishes/bread.png" },
     item_ouzu_kababi: {
       name: "Lamb kebab",
       price: "18₾",
@@ -305,7 +305,7 @@ const translations = {
     item_quzu_qabirgesi: {
       name: "Lamb ribs",
       price: "18₾",
-      img: "assets/kebabs/",
+      img: "assets/kebabs/neknebi.png",
     },
     item_quyruq_kababi: {
       name: "Tail fat on skewer",
@@ -335,12 +335,12 @@ const translations = {
     item_khan_kababi: {
       name: "Khan kebab (heart and liver)",
       price: "12₾",
-      img: "assets/kebabs/",
+      img: "assets/kebabs/khanKabab.png",
     },
     item_teravez_kababi: {
       name: "Vegetables on skewer (peppers, eggplant, tomatoes)",
       price: "?₾",
-      img: "assets/kebabs/",
+      img: "assets/kebabs/bostneulisKabab.png",
     },
     item_dana_basdirmasi: {
       name: "Veal basturma",
